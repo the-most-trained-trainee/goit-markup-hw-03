@@ -9,6 +9,13 @@
 ul {
     padding: 0;
     margin: 0;
+    border: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 /* ===GENERAL CLASSES=== */
 
@@ -105,8 +112,6 @@ body {
 }
 
 /*        Footer Contacts  */
-
-
 
 .contact-details a {
     font-size: 14px;
@@ -212,6 +217,7 @@ body {
     letter-spacing: 0.03em;
     font-family: 'Roboto';
     font-style: normal;
+    margin-right: 8px;
 }
 
 .filter-button:hover {
@@ -234,12 +240,14 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding-left: 24px;
 }
 
 .project-description {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
+    padding-left: 24px;
     color: var(--description-color);
 }
 
@@ -309,15 +317,57 @@ header {
     background-color: var(--team-background-color);
 }
 
-.hero-background {
-    background-color: var(--hero-background-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
+
+.footer-bar {
+    background: var(--main-text-color);
+    width: 1170px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 0;
+}
+
+.web-studio-icon-part-footer {
+    color: var(--button-hero-color);
+    margin-top: 60px;
 }
 
 .contact-details {
-    background: var(--main-text-color);
-    width: 1170px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+}
+
+.contact-details li:nth-child(n+2) {
+    padding-top: 9px;
+}
+
+.selection-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.project-card {
+    width: 370px;
+    background-color: var(--button-hero-color);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ECECEC;
+}
+
+.project-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.img-inclusion {
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.last-filter-button {
+    margin-right: 0;
 }
