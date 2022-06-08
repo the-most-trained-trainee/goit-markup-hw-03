@@ -6,17 +6,14 @@
     --button-hero-color: #ffffff;
     --team-background-color: #F5F4FA;
 }
-ul {
+
+ul, li, h1, h2, h3, h4, p {
     padding: 0;
     margin: 0;
     border: 0;
 }
 
-li {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
+
 /* ===GENERAL CLASSES=== */
 
 body {
@@ -64,15 +61,15 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    /* h3  */
     display: flex;
-    padding-top: 18px;
-    padding-bottom: 18px;
 }
 
 .navi-links a {
+    display: inline-block;
     text-decoration: none;
     color:var(--main-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .navi-links a:hover {
@@ -193,6 +190,7 @@ body {
     line-height: 1.1875;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 10px;
 }
 
 .member-position {
@@ -208,7 +206,7 @@ body {
 /*        Filter Buttons */
 
 .filter-button {
-    height: 38px;
+    display: flex;
     background: #F5F4FA;
     border-radius: 4px;
     font-weight: 500;
@@ -218,8 +216,12 @@ body {
     letter-spacing: 0.03em;
     font-family: 'Roboto';
     font-style: normal;
-    margin-right: 8px;
     border: none;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
 }
 
 .filter-button:hover {
@@ -242,14 +244,13 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    padding-left: 24px;
+    margin-bottom: 4px;
 }
 
 .project-description {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    padding-left: 24px;
     color: var(--description-color);
 }
 
@@ -302,13 +303,13 @@ header {
 .team-members {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 50px;
 }
 
 .member-card {
     width: 270px;
     background-color: var(--button-hero-color);
     margin-right: 30px;
-    margin-bottom: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -321,12 +322,8 @@ header {
 }
 
 
-.footer-bar {
+footer {
     background: var(--main-text-color);
-    width: 1170px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 0;
 }
 
 .web-studio-icon-part-footer {
@@ -345,6 +342,14 @@ header {
 .selection-buttons {
     display: flex;
     justify-content: center;
+}
+
+.selection-buttons li {
+    margin-right: 8px;
+}
+
+.selection-buttons li:nth-child(5) {
+    margin-right: 0px;
 }
 
 .project-list {
@@ -373,4 +378,20 @@ header {
 
 .last-filter-button {
     margin-right: 0;
+}
+
+.member-card-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer address {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.project-description-name {
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
