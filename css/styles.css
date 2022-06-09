@@ -13,7 +13,6 @@ ul, li, h1, h2, h3, h4, p {
     border: 0;
 }
 
-
 /* ===GENERAL CLASSES=== */
 
 body {
@@ -163,6 +162,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
 .quality-text {
@@ -254,7 +254,6 @@ body {
     color: var(--description-color);
 }
 
-/* hw3 */
 .nav-list {
     display: flex;
     align-items: center;
@@ -285,6 +284,7 @@ header {
 .center-button {
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .qualities {
@@ -298,6 +298,7 @@ header {
 .activities {
     display: flex;
     justify-content: space-between;
+    padding-top: 50px;
 }
 
 .team-members {
@@ -320,7 +321,6 @@ header {
 .team-members-background {
     background-color: var(--team-background-color);
 }
-
 
 footer {
     background: var(--main-text-color);
@@ -355,7 +355,8 @@ footer {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: -30px;
 }
 
 .project-card {
@@ -394,4 +395,19 @@ footer address {
     padding-left: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.hero-section {
+    padding-top: 195px;
+    padding-bottom: 205px;
+}
+
+.qualities-section {
+    padding-top: 97px;
+    padding-bottom: 91px;
+}
+
+.we-do-section {
+    padding-top: 0;
+    padding-bottom: 94px;
 }
